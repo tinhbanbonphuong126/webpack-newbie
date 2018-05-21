@@ -141,11 +141,23 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./m
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/sass-main.scss */ \"./src/scss/sass-main.scss\");\n/* harmony import */ var _scss_sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_sass_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n\n__webpack_require__(/*! ./scss/sass-main.scss */ \"./src/scss/sass-main.scss\");\n\nvar _modules = __webpack_require__(/*! ./js/modules */ \"./src/js/modules.js\");\n\n(0, _modules.hello)();\n(0, _modules.ohayo)();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules.js":
+/*!***************************!*\
+  !*** ./src/js/modules.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nfunction hello() {\n  console.log('Hello English');\n}\n\nfunction ohayo() {\n  console.log('おはようございます');\n}\n\nmodule.exports = {\n  hello: hello,\n  ohayo: ohayo\n};\n\n//# sourceURL=webpack:///./src/js/modules.js?");
 
 /***/ }),
 
