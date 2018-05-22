@@ -3,11 +3,15 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   mode: 'none',
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js',
+    about: './src/about.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -21,9 +25,9 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            {loader: 'css-loader'},
-            {loader: 'postcss-loader'},
-            {loader: 'sass-loader'}
+            {loader: 'css-loader', options: {sourceMap: true}},
+            {loader: 'postcss-loader', options: {sourceMap: true}},
+            {loader: 'sass-loader', options: {sourceMap: true}}
           ]
         })
       }, {

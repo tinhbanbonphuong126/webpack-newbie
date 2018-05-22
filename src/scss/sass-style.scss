@@ -1,0 +1,19 @@
+body {
+  background: pink;
+
+  .container {
+    opacity: 1;
+
+    .upper {
+      opacity: 1;
+
+    }
+    .lower {
+      opacity: 1;
+
+      p {
+        font-size: 100px!important;
+      }
+    }
+  }
+}
