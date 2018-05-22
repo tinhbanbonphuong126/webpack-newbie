@@ -1,9 +1,9 @@
 function hello () {
-  console.log('Hello English')
+  console.log('Hello English....Loading.....')
 }
 
 function ohayo () {
-  console.log('おはようございます')
+  console.log('おはようございます.......Loading.....')
 }
 
 module.exports = {
