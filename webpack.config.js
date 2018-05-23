@@ -15,7 +15,7 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: '/dist'
   },
@@ -48,7 +48,14 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
-      title: 'Multiple Bundles!'
+      filename: 'index.html',
+      template: 'src/views/index.html',
+      chunks: ['app']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: 'src/views/about.html',
+      chunks: ['about']
     }),
     new BrowserSyncPlugin(
       // BrowserSync options
