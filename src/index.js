@@ -10,3 +10,5 @@ ohayo()
 
 shello()
 sohayo()
+sohayo()
+sohayo()
