@@ -47,7 +47,8 @@
   "standard": {
     "globals": [
       "$",
-      "jQuery"
+      "jQuery",
+      "fetch"
     ]
   }
 }
