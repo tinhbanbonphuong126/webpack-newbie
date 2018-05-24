@@ -1,9 +1,10 @@
-import Entity from './js/class/entity.js'
+import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
 
-class Hobby extends Entity {
-
+class App extends Component {
+  render () {
+    return (<div>HELLO Dien tu vien thong WORLD</div>)
+  }
 }
 
-let Frodo = new Hobby('hello', 'word')
-
-console.log(Frodo)
+ReactDOM.render(<App />, document.getElementById('root'))
