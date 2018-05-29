@@ -9,7 +9,8 @@ module.exports = {
   mode: 'none',
   entry: {
     app: './src/index.js',
-    about: './src/about.js'
+    about: './src/about.js',
+    es6: './src/es6.js'
   },
   output: {
     filename: '[name].bundle.js',
@@ -56,6 +57,11 @@ module.exports = {
       filename: 'about.html',
       template: 'src/views/about.html',
       chunks: ['about']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'es6.html',
+      template: 'src/views/es6.html',
+      chunks: ['es6']
     }),
     new BrowserSyncPlugin(
       // BrowserSync options
